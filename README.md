@@ -6,7 +6,7 @@ Aquí muestro una parte de mi trabajo como desarrolladora web front-end, enfocá
 
 ---
 
-[![Ver Online](https://img.shields.io/badge/Ver%20Online-Portfolio-green)](https://**tusitio.vercel.app**) <!-- 🔥 ACORDATE DE CAMBIAR ESTE LINK 🔥 -->
+[![Ver Online](https://img.shields.io/badge/Ver%20Online-Portfolio-green)](https://filotropo-dentronf-9ycwpbb86-gisela84spinas-projects.vercel.app/)
 
 ---
 
