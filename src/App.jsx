@@ -4,6 +4,9 @@ import About from './components/About' ;
 import ProjectsSection from './components/ProjectsSection' ;
 import ContactForm from './components/ContactForm' ;
 import SkillsSection from './components/SkillsSection' ;
+import TechStack from './components/TechStack';
+
+
 
 function App() {
   return (
@@ -13,6 +16,8 @@ function App() {
       <SkillsSection /> 
       <ProjectsSection />
       <ContactForm />
+      <TechStack />
+      
 
       <footer className="text-center text-gray-500 mt-12">
         © 2025 Gise Spina. Todos los derechos reservados.
