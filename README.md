@@ -1,8 +1,31 @@
-# React + Vite
+# Portfolio de Gise 💻✨
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+¡Bienvenid@ a mi portfolio personal!
 
-Currently, two official plugins are available:
+Aquí muestro una parte de mi trabajo como desarrolladora web front-end, enfocándome en crear experiencias visuales que comuniquen, conecten y sorprendan.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
+
+[![Ver Online](https://img.shields.io/badge/Ver%20Online-Portfolio-green)](https://**tusitio.vercel.app**) <!-- 🔥 ACORDATE DE CAMBIAR ESTE LINK 🔥 -->
+
+---
+
+## 🔥 Tecnologías utilizadas
+- React
+- Vite
+- Tailwind CSS
+- Framer Motion
+
+---
+
+## 🚀 ¿Qué vas a encontrar?
+- Sección **About** responsive y animada
+- Contacto
+- Proyectos destacados (¡próximamente!)
+
+---
+
+## 🌐 Deploy
+Realizado en [Vercel](https://vercel.com/)
+
+---
