@@ -3,20 +3,21 @@ import Header from './components/Header' ;
 import About from './components/About' ;
 import ProjectsSection from './components/ProjectsSection' ;
 import ContactForm from './components/ContactForm' ;
-import SkillsSection from './components/SkillsSection' ;
-import TechStack from './components/TechStack';
+import TechStack from './components/TechStack' ;
+
 
 
 
 function App() {
   return (
-    <div className="min-h-screen bg-gray-100 p-8">
+    <div className="min-h-screen bg-gray-100 overflow-x-hidden px-4 py-8">
+
       <Header />
       <About />
-      <SkillsSection /> 
+      <TechStack /> 
       <ProjectsSection />
       <ContactForm />
-      <TechStack />
+      
       
 
       <footer className="text-center text-gray-500 mt-12">

@@ -2,10 +2,25 @@ import { motion } from "framer-motion";
 
 function About() {
   return (
-    <section id="about" className="py-20 px-6 bg-gray-950 text-white flex flex-col items-center justify-center">
-      <div className="max-w-6xl w-full mx-auto flex flex-col md:flex-row items-center gap-12">
+    <section id="about" className="relative py-20 px-6 bg-gray-950 text-white flex flex-col items-center justify-center">
+      {/* Video de fondo */}
+      <div className="absolute inset-0 w-full h-full overflow-hidden">
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover opacity-40"
+          src="/public/dnaBackground.mp4"
+        />
+      </div>
 
-        {/* Text content */}
+      {/* Fondo difuminado */}
+      <div className="absolute inset-0 bg-black/60 backdrop-blur-md z-0"></div>
+
+      <div className="max-w-6xl w-full mx-auto flex flex-col md:flex-row items-center gap-12 relative z-10">
+
+        {/* Contenido de texto */}
         <div className="bg-white/10 backdrop-blur-md rounded-2xl p-8 md:w-2/3 shadow-lg">
           <h2 className="text-3xl sm:text-4xl font-bold mb-6 relative inline-block after:content-[''] after:block after:h-1 after:bg-red-500 after:w-16 after:mt-2">
             ¿Quién es Gise?
@@ -32,7 +47,7 @@ function About() {
           </motion.blockquote>
         </div>
 
-        {/* Images section */}
+        {/* Sección de imágenes */}
         <div className="w-full md:w-1/3 flex flex-col items-center gap-8">
 
           {/* Foto profesional */}
