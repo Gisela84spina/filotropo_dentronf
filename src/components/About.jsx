@@ -11,7 +11,7 @@ function About() {
           muted
           playsInline
           className="absolute inset-0 w-full h-full object-cover opacity-40"
-          src="/public/dnaBackground.mp4"
+          src="/dnaBackground.webm"
         />
       </div>
 

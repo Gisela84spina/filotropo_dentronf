@@ -34,7 +34,7 @@ function TechStack() {
         onCanPlay={() => setVideoReady(true)} // 🔥 cuando el video esté listo, desaparece el fallback
         className="absolute top-0 left-0 w-full h-full object-cover z-0"
       >
-        <source src="/dnaBackground.mp4" type="video/mp4" />
+        <source src="/dnaBackground.webm" type="video/webm" />
         Tu navegador no soporta el video.
       </video>
 
@@ -42,7 +42,7 @@ function TechStack() {
       <section id="tech" className="py-20 px-6 bg-black/60 text-white relative z-10 backdrop-blur-md">
 
         <div className="max-w-6xl mx-auto text-center">
-          <h2 className="text-4xl font-bold mb-12">Tecnologías que uso</h2>
+          <h2 className="text-4xl font-bold mb-12">Tecnologías </h2>
 
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8">
             {techs.map((tech, index) => (
