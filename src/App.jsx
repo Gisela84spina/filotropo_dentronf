@@ -1,9 +1,9 @@
 
 import Header from './components/Header' ;
-import About from './components/About' ;
+
 import ProjectsSection from './components/ProjectsSection' ;
 import ContactForm from './components/ContactForm' ;
-import TechStack from './components/TechStack' ;
+import MeAndTech from './components/MeAndTech' ;
 
 
 
@@ -13,8 +13,7 @@ function App() {
     <div className="min-h-screen bg-gray-100 overflow-x-hidden px-4 py-8">
 
       <Header />
-      <About />
-      <TechStack /> 
+      <MeAndTech />
       <ProjectsSection />
       <ContactForm />
       

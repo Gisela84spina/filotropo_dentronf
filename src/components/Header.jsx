@@ -1,61 +1,74 @@
-import { useState } from "react";
+import { useState } from 'react';
+import { Menu, X, FileText } from 'lucide-react';
 
-function Header() {
-  const [videoReady, setVideoReady] = useState(false);
+export default function Header() {
+  const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="relative h-screen overflow-hidden bg-black">
-      {/* Video de fondo */}
+    <nav className="relative bg-black text-white shadow-md sticky top-0 z-50 overflow-hidden">
+      {/* Fondo de video */}
       <video
         autoPlay
         loop
         muted
         playsInline
-        onCanPlay={() => setVideoReady(true)}
-        className="absolute top-0 left-0 w-full h-full object-cover"
+        className="absolute top-0 left-0 w-full h-full object-cover opacity-30 z-[-1]"
       >
         <source src="/dnaBackground.webm" type="video/webm" />
         Tu navegador no soporta el video.
       </video>
 
-      {/* Loader con láser */}
-      {!videoReady && (
-        <div className="absolute top-0 left-0 w-full h-full bg-black z-20 
-        flex items-center justify-center">
-          <div className="absolute top-0 left-0 w-full h-full overflow-hidden">
-            <div className="laser-line w-full h-1 bg-red-600 shadow-red 
-            animate-laser" />
-          </div>
-        </div>
-      )}
-
       {/* Contenido principal */}
-      {videoReady && (
-        <div className="relative z-10 flex flex-col items-center justify-center 
-        h-full text-white bg-black/50 px-4 text-center">
-          <h1
-            className="relative text-3xl sm:text-4xl md:text-5xl font-bold 
-            glitch-text px-2"
-            data-text="Hola, soy Gise Spina"
+      <div className="flex justify-between items-center p-4 max-w-6xl mx-auto">
+        <a href="#home" className="text-2xl font-bold hover:text-red-500">
+          Gise Dev
+        </a>
+
+        {/* Desktop menu */}
+        <ul className="hidden md:flex space-x-6 items-center">
+          <li><a href="#about" className="hover:text-red-500">Sobre mí</a></li>
+          <li><a href="#technologies" className="hover:text-red-500">Tecnologías</a></li>
+          <li><a href="#projects" className="hover:text-red-500">Proyectos</a></li>
+          <li><a href="#contact" className="hover:text-red-500">Contacto</a></li>
+          <li>
+            <a
+              href="/cv.pdf"
+              download
+              className="flex items-center gap-2 px-3 py-1.5 rounded-md bg-red-500 text-white hover:bg-red-600 transition"
+            >
+              <FileText size={18} />
+              CV
+            </a>
+          </li>
+        </ul>
+
+        {/* Botón menú mobile */}
+        <button
+          className="md:hidden text-white"
+          onClick={() => setMenuOpen(!menuOpen)}
+          aria-label="Toggle menu"
+        >
+          {menuOpen ? <X size={28} /> : <Menu size={28} />}
+        </button>
+      </div>
+
+      {/* Menú mobile */}
+      {menuOpen && (
+        <div className="md:hidden px-4 pb-4 space-y-2 text-white bg-black/60 backdrop-blur-sm">
+          <a href="#about" className="block hover:text-red-400">Sobre mí</a>
+          <a href="#technologies" className="block hover:text-red-400">Tecnologías</a>
+          <a href="#projects" className="block hover:text-red-400">Proyectos</a>
+          <a href="#contact" className="block hover:text-red-400">Contacto</a>
+          <a
+            href="/cv.pdf"
+            download
+            className="mt-2 inline-flex items-center gap-2 px-3 py-1.5 rounded-md bg-red-500 text-white hover:bg-red-600 transition"
           >
-            Hola, soy Gise Spina
-          </h1>
-
-          <p className="text-base sm:text-lg md:text-xl mt-4">
-            Desarrolladora Front-End
-          </p>
-
-          <a href="#about">
-            <button className="mt-6 px-6 py-3 sm:px-8 sm:py-3 bg-red-600
-             text-white font-semibold rounded-full hover:bg-red-700 
-             transition text-sm sm:text-base">
-              Conoceme
-            </button>
+            <FileText size={18} />
+            Descargar CV
           </a>
         </div>
       )}
-    </header>
+    </nav>
   );
 }
-
-export default Header;
