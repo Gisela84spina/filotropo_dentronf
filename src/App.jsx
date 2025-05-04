@@ -1,5 +1,9 @@
 
 import Header from './components/Header' ;
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+
+import ProjectsCarousel from './components/ProjectsCarousel'; 
 
 import ProjectsSection from './components/ProjectsSection' ;
 import ContactForm from './components/ContactForm' ;
@@ -16,7 +20,7 @@ function App() {
       <MeAndTech />
       <ProjectsSection />
       <ContactForm />
-      
+      <ProjectsCarousel />
       
 
       <footer className="text-center text-gray-500 mt-12">
