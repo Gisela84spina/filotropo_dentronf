@@ -20,7 +20,7 @@ function App() {
       <MeAndTech />
       <ProjectsSection />
       <ContactForm />
-      <ProjectsCarousel />
+      <ProjectsCarousel/>
       
 
       <footer className="text-center text-gray-500 mt-12">
