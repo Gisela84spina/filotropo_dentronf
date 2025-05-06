@@ -1,4 +1,5 @@
-import ProjectCard from './ProjectCard'
+import React from 'react';
+import ProjectsCarousel from './ProjectsCarousel';
 
 const ProjectsSection = () => {
   const proyectos = [
@@ -16,25 +17,22 @@ const ProjectsSection = () => {
       liveUrl: "https://proyecto2.vercel.app",
       imageUrl: "/images/proyecto2-preview.png"
     }
-  ]
+  ];
 
   return (
-    <section id="projects" className="py-12 px-4 bg-gray-50">
-      <h2 className="text-3xl font-bold text-center mb-8">Proyectos</h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        {proyectos.map((proyecto, index) => (
-          <ProjectCard
-            key={index}
-            title={proyecto.title}
-            description={proyecto.description}
-            githubUrl={proyecto.githubUrl}
-            liveUrl={proyecto.liveUrl}
-            imageUrl={proyecto.imageUrl}
-          />
-        ))}
-      </div>
-    </section>
-  )
-}
+    <section
+    
+    id="projects"
+    className="py-16 px-4 bg-gradient-to-b from-[#0f172a] via-[#0f766e] to-black"
 
-export default ProjectsSection
+    >
+  
+    <h2 className="text-4xl font-bold text-center text-white mb-12">
+       Mis Proyectos
+    </h2>
+    <ProjectsCarousel proyectos={proyectos} />
+    </section>
+  );
+};
+
+export default ProjectsSection;
