@@ -21,7 +21,7 @@ export default function Header() {
       {/* Contenido principal */}
       <div className="flex justify-between items-center p-4 max-w-6xl mx-auto">
         <a href="#home" className="text-2xl font-bold hover:text-red-500">
-          Gise Dev
+          Gisela Spina
         </a>
 
         {/* Desktop menu */}

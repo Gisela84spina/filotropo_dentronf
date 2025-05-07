@@ -4,15 +4,15 @@ import ProjectsCarousel from './ProjectsCarousel';
 const ProjectsSection = () => {
   const proyectos = [
     {
-      title: "Portfolio Web",
-      description: "Portfolio hecho con React, Vite, Tailwind y deploy en Vercel.",
+      title: "E-commerce",
+      description: "E-commerce hecho con React, Vite, Tailwind y deploy en Vercel.",
       githubUrl: "https://github.com/Gisela84spina/filotropo_dentronf",
       liveUrl: "https://filotropo-dentronf.vercel.app",
       imageUrl: "/images/portfolio-preview.png"
     },
     {
       title: "Proyecto 2",
-      description: "Otro proyecto interesante que hiciste.",
+      description: "Otro proyecto interesante que hice.",
       githubUrl: "https://github.com/tuusuario/proyecto2",
       liveUrl: "https://proyecto2.vercel.app",
       imageUrl: "/images/proyecto2-preview.png"

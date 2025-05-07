@@ -46,11 +46,12 @@ function MeAndTech() {
             ¿Quién es Gise?
           </h2>
           <p className="text-base sm:text-lg leading-relaxed">
-            De naturaleza inquieta pero dedicada. Desde 2021 vengo explorando el 
-            mundo del Desarrollo Web, estudiando diferentes tecnologías y lenguajes de 
-            programación con una mezcla de curiosidad y obsesión por entender cómo funciona todo.
+            De naturaleza inquieta pero dedicada. Desde 2021 sumergida en el 
+            mundo del Desarrollo Web, explorando tecnologías y lenguajes
+            con una mezcla de curiosidad y pasión por entender cómo funciona todo.
             <br /><br />
-            Me apasiona crear experiencias visuales que conecten, comuniquen y, si pueden, sorprendan un poquito.
+            Me apasiona crear interfaces que no solo se vean bien, sino que
+            comuniquen, conecten y -si pueden- sorprendan un poquito.
           </p>
           <motion.blockquote
             initial={{ opacity: 0, y: 20 }}
@@ -60,7 +61,7 @@ function MeAndTech() {
             className="relative text-red-500 italic mt-8 text-lg"
           >
             <span className="absolute text-5xl text-white/10 -left-6 -top-4 select-none">“</span>
-            Más que programar, se trata de conectar, comprender e influir.
+            Más que programar, se trata de comprender, resolver e influir.
             <span className="absolute text-5xl text-white/10 -right-6 -bottom-4 select-none">”</span>
           </motion.blockquote>
         </div>
