@@ -4,18 +4,18 @@ import ProjectsCarousel from './ProjectsCarousel';
 const ProjectsSection = () => {
   const proyectos = [
     {
-      title: "E-commerce",
-      description: "E-commerce hecho con React, Vite, Tailwind y deploy en Vercel.",
-      githubUrl: "https://github.com/Gisela84spina/filotropo_dentronf",
-      liveUrl: "https://filotropo-dentronf.vercel.app",
-      imageUrl: "/images/portfolio-preview.png"
+      title: "G-commerce",
+      description: "G-commerce hecho con React, Vite, Tailwind y deploy en Vercel.",
+      githubUrl: "https://github.com/Gisela84spina/G-commerce",
+      liveUrl: "https://g-commerce-five.vercel.app",
+      imageUrl: "/public/G-commerce.png",
     },
     {
-      title: "Proyecto 2",
-      description: "Otro proyecto interesante que hice.",
-      githubUrl: "https://github.com/tuusuario/proyecto2",
-      liveUrl: "https://proyecto2.vercel.app",
-      imageUrl: "/images/proyecto2-preview.png"
+      title: "Radar-Policial",
+      description: "App con geolocalización en tiempo real para detectar operativos policiales en Junín. Hecha con React, Leaflet, Tailwind e IA simulada.",
+      githubUrl: "https://github.com/Gisela84spina/radar-policial",
+      liveUrl: "https://radar-policial.vercel.app",
+      imageUrl: "/public/Radar-Policial.png",
     }
   ];
 

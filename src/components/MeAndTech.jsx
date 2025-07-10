@@ -46,7 +46,7 @@ function MeAndTech() {
             ¿Quién es Gise?
           </h2>
           <p className="text-base sm:text-lg leading-relaxed">
-            De naturaleza inquieta pero dedicada. Desde 2021 sumergida en el 
+            De naturaleza inquieta pero dedicada. Desde 2022 sumergida en el 
             mundo del Desarrollo Web, explorando tecnologías y lenguajes
             con una mezcla de curiosidad y pasión por entender cómo funciona todo.
             <br /><br />
