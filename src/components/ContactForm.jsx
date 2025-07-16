@@ -1,7 +1,10 @@
 import { useState } from "react";
+//import emailjs from "@emailjs/browser";
 
 export default function ContactForm() {
-  const [formData, setFormData] = useState({ name: "", email: "", message: "" });
+
+ 
+  const [formData, setFormData] = useState({ from_name: "", reply_to: "", message: ""});
   const [status, setStatus] = useState(null);
 
   const handleChange = (e) => {
@@ -9,50 +12,75 @@ export default function ContactForm() {
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setStatus("sending");
 
-    try {
-      const res = await fetch("/api/sendContact", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  
+    if (
+      !formData.from_name.trim() ||
+      !formData.reply_to.trim().includes("@") ||
+      !formData.message.trim()
+    ) {
+      console.error("Faltan datos obligatorios o están mal formateados");
+      setStatus("error");
+      return;
+    }
+  
+    console.log("Datos que se van a enviar:", JSON.stringify(formData, null, 2));
+  
+    setStatus("sending");
+  
+   
+    fetch("http://localhost:4000/contact", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formData),
+    })
+      .then((res) => {
+        if (!res.ok) throw new Error("Error en la respuesta del servidor");
+        return res.json();
+      })
+      .then((data) => {
+        console.log("✅ Respuesta del servidor:", data);
+        setStatus("success");
+        setFormData({ from_name: "", reply_to: "", message: "" });
+      })
+      .catch((error) => {
+        console.error("❌ Error al enviar:", error);
+        setStatus("error");
       });
 
-      const result = await res.json();
+    };
 
-      if (res.ok) {
-        setStatus("success");
-        setFormData({ name: "", email: "", message: "" });
-      } else {
-        setStatus("error");
-        console.error(result.message);
-      }
-    } catch (error) {
-      setStatus("error");
-      console.error("Error al enviar:", error);
-    }
-  };
+  
+ 
+  
 
   return (
-    <section className="py-16 px-4 bg-gradient-to-b from-black via-[#0f766e] to-[#0f172a] text-white">
+    <section
+      id="contact"
+      className="py-16 px-4 bg-gradient-to-b from-black via-[#0f766e] to-[#0f172a] text-white"
+    >
       <h2 className="text-3xl font-bold text-center mb-8">Contacto</h2>
+
+
       <form onSubmit={handleSubmit} className="max-w-md mx-auto space-y-4">
         <input
           type="text"
-          name="name"
+          name="from_name"
           placeholder="Tu nombre"
-          value={formData.name}
+          value={formData.from_name}
           onChange={handleChange}
           className="w-full bg-transparent border border-white text-white placeholder-gray-300 p-2 rounded"
           required
         />
         <input
           type="email"
-          name="email"
+          name="reply_to"
           placeholder="Tu email"
-          value={formData.email}
+          value={formData.reply_to}
           onChange={handleChange}
           className="w-full bg-transparent border border-white text-white placeholder-gray-300 p-2 rounded"
           required
@@ -72,10 +100,17 @@ export default function ContactForm() {
           Enviar
         </button>
 
-        {status === "sending" && <p className="text-center text-yellow-300">Enviando...</p>}
-        {status === "success" && <p className="text-center text-green-300">Mensaje enviado ✅</p>}
-        {status === "error" && <p className="text-center text-red-400">Hubo un error ❌</p>}
+        {status === "sending" && (
+          <p className="text-center text-yellow-300">Enviando...</p>
+        )}
+        {status === "success" && (
+          <p className="text-center text-green-300">Mensaje enviado ✅</p>
+        )}
+        {status === "error" && (
+          <p className="text-center text-red-400">Hubo un error ❌</p>
+        )}
       </form>
     </section>
   );
+
 }
