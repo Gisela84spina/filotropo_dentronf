@@ -31,7 +31,8 @@ export default function ContactForm() {
     setStatus("sending");
   
    
-    fetch("http://localhost:4000/contact", {
+    fetch("https://backend-contacto.vercel.app/api/contact", {
+
       method: "POST",
       headers: {
         "Content-Type": "application/json",
