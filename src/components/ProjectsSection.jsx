@@ -8,14 +8,14 @@ const ProjectsSection = () => {
       description: "G-commerce hecho con React, Vite, Tailwind y deploy en Vercel.",
       githubUrl: "https://github.com/Gisela84spina/G-commerce",
       liveUrl: "https://g-commerce-five.vercel.app",
-      imageUrl: "/public/G-commerce.png",
+      imageUrl: "/G-commerce.png",
     },
     {
       title: "Radar-Policial",
       description: "App con geolocalización en tiempo real para detectar operativos policiales en Junín. Hecha con React, Leaflet, Tailwind e IA simulada.",
       githubUrl: "https://github.com/Gisela84spina/radar-policial",
       liveUrl: "https://radar-policial.vercel.app",
-      imageUrl: "/public/Radar-Policial.png",
+      imageUrl: "/Radar-Policial.png",
     }
   ];
 
