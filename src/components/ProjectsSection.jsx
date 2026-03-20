@@ -5,21 +5,20 @@ const ProjectsSection = () => {
   const proyectos = [
     {
       title: "G-commerce",
-      description: "G-commerce hecho con React, Vite, Tailwind y deploy en Vercel.",
+      description: "E-commerce desarrollado con React, Vite y Tailwind. Implementa carrito de compras, renderizado dinámico de productos y manejo de estado global. Integración con Firebase para persistencia de datos y despliegue en Vercel.",
       githubUrl: "https://github.com/Gisela84spina/G-commerce",
       liveUrl: "https://g-commerce-five.vercel.app",
       imageUrl: "/G-commerce.png",
     },
-    {
+    { 
       title: "Radar-Policial",
-      description: "App con geolocalización en tiempo real para detectar operativos policiales en Junín. Hecha con React, Leaflet, Tailwind e IA simulada.",
+      description: "Aplicación web con geolocalización en tiempo real para visualizar operativos policiales. Desarrollada con React y Leaflet, implementa renderizado dinámico de mapas, manejo de estado y simulación de detección mediante lógica de IA. Enfocada en interacción en tiempo real y experiencia de usuario.",
       githubUrl: "https://github.com/Gisela84spina/radar-policial",
       liveUrl: "https://radar-policial.vercel.app",
       imageUrl: "/Radar-Policial.png",
     }
   ];
-
-  return (
+ return (
     <section
     
     id="projects"
