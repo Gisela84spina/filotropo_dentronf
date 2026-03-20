@@ -60,7 +60,7 @@ export default function Header() {
           <a href="#projects" className="block hover:text-red-400">Proyectos</a>
           <a href="#contact" className="block hover:text-red-400">Contacto</a>
           <a
-            href="/cv.pdf"
+            href="/CV_Gisela_Spina_Fullstack_Dev.pdf"
             download
             className="mt-2 inline-flex items-center gap-2 px-3 py-1.5 rounded-md bg-red-500 text-white hover:bg-red-600 transition"
           >
