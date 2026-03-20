@@ -50,7 +50,7 @@ function MeAndTech() {
             Apasionada por crear interfaces funcionales y en constante crecimiento.
             Buscando mi primera oportunidad profesional.
             <br /><br />
-            Siempre buscando mejorar y construir soluciones reales que
+            Mejorar y construir soluciones reales que
             comuniquen, conecten y -si pueden- sorprendan un poquito.
           </p>
           <motion.blockquote
