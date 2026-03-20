@@ -46,11 +46,11 @@ function MeAndTech() {
             ¿Quién es Gise?
           </h2>
           <p className="text-base sm:text-lg leading-relaxed">
-            De naturaleza inquieta pero dedicada. Desde 2022 sumergida en el 
-            mundo del Desarrollo Web, explorando tecnologías y lenguajes
-            con una mezcla de curiosidad y pasión por entender cómo funciona todo.
+            Frontend Developer | React, JavaScript, Tailwind.
+            Apasionada por crear interfaces funcionales y en constante crecimiento.
+            Buscando mi primera oportunidad profesional.
             <br /><br />
-            Me apasiona crear interfaces que no solo se vean bien, sino que
+            Siempre buscando mejorar y construir soluciones reales que
             comuniquen, conecten y -si pueden- sorprendan un poquito.
           </p>
           <motion.blockquote
