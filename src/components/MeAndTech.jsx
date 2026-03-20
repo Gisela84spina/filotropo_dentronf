@@ -43,16 +43,22 @@ function MeAndTech() {
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12 relative z-10 pb-24">
         <div className="bg-white/10 backdrop-blur-md rounded-2xl p-8 md:w-2/3 shadow-lg">
           <h2 className="text-3xl sm:text-4xl font-bold mb-6 relative inline-block after:content-[''] after:block after:h-1 after:bg-red-500 after:w-16 after:mt-2">
-            ¿Quién es Gise?
+            Sobre mi
           </h2>
           <p className="text-base sm:text-lg leading-relaxed">
             Frontend Developer | React, JavaScript, Tailwind.
-            Apasionada por crear interfaces funcionales y en constante crecimiento.
-            Buscando mi primera oportunidad profesional.
+            
             <br /><br />
-            Mejorar y construir soluciones reales que
-            comuniquen, conecten y -si pueden- sorprendan un poquito.
-          </p>
+        
+           Construyo aplicaciones web dinámicas y responsivas, con foco en usabilidad
+            y rendimiento.
+
+           <br /><br />
+
+          Tengo experiencia integrando APIs, manejo de estado y sistemas de autenticación.
+         
+</p>
+
           <motion.blockquote
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -61,7 +67,8 @@ function MeAndTech() {
             className="relative text-red-500 italic mt-8 text-lg"
           >
             <span className="absolute text-5xl text-white/10 -left-6 -top-4 select-none">“</span>
-            Más que programar, se trata de comprender, resolver e influir.
+            Busco mi primera oportunidad profesional donde pueda seguir creciendo y aportar 
+            valor desde el desarrollo.
             <span className="absolute text-5xl text-white/10 -right-6 -bottom-4 select-none">”</span>
           </motion.blockquote>
         </div>
