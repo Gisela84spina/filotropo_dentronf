@@ -32,7 +32,7 @@ export default function Header() {
           <li><a href="#contact" className="hover:text-red-500">Contacto</a></li>
           <li>
             <a
-              href="/Gisela_Spina_CV_Fullstack_Dev.pdf"
+              href="/cv.pdf"
               download
               className="flex items-center gap-2 px-3 py-1.5 rounded-md bg-red-500 text-white hover:bg-red-600 transition"
             >
