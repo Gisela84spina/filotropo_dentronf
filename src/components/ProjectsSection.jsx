@@ -4,11 +4,12 @@ import ProjectsCarousel from './ProjectsCarousel';
 const ProjectsSection = () => {
   const proyectos = [
     {
-      title: "G-commerce",
-      description: "E-commerce desarrollado con React, Vite y Tailwind. Implementa carrito de compras, renderizado dinámico de productos y manejo de estado global. Integración con Firebase para persistencia de datos y despliegue en Vercel.",
-      githubUrl: "https://github.com/Gisela84spina/G-commerce",
-      liveUrl: "https://g-commerce-five.vercel.app",
-      imageUrl: "/G-commerce.png",
+      title: "Sucule",
+      description: "E-commerce desarrollado para un cliente real, con gestión dinámica de productos mediante Firebase y panel de administración mobile-first. Permite administrar el catálogo y concretar ventas a través de un flujo optimizado que integra carrito de compras y envío directo del pedido por WhatsApp, adaptado a negocios locales.",
+
+      githubUrl: "https://github.com/Gisela84spina/tienda-sucule66",
+      liveUrl: "https://tienda-sucule66.vercel.app/",
+      imageUrl: "/sucule.png",
     },
     { 
       title: "Radar-Policial",
