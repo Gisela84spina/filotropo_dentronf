@@ -1,31 +1,31 @@
 # Portfolio de Gise 💻✨
 
-¡Bienvenid@ a mi portfolio personal!
+Bienvenid@ a mi portfolio personal.
 
-Aquí muestro una parte de mi trabajo como desarrolladora web front-end, enfocándome en crear experiencias visuales que comuniquen, conecten y sorprendan.
-
----
-
-[![Ver Online](https://img.shields.io/badge/Ver%20Online-Portfolio-green)](https://filotropo-dentronf-9ycwpbb86-gisela84spinas-projects.vercel.app/)
+Aquí presento proyectos de desarrollo web enfocados en la creación de aplicaciones funcionales, con integración de servicios como Firebase, APIs y soluciones orientadas a necesidades reales de negocio.
 
 ---
 
 ## 🔥 Tecnologías utilizadas
-- React
-- Vite
-- Tailwind CSS
-- Framer Motion
+
+* React
+* Vite
+* Tailwind CSS
+* Framer Motion
 
 ---
 
 ## 🚀 ¿Qué vas a encontrar?
-- Sección **About** responsive y animada
-- Contacto
-- Proyectos destacados (¡próximamente!)
+
+* Aplicaciones web reales y funcionales
+* Proyectos con integración de backend (Firebase, APIs)
+* Interfaces responsive y orientadas a la usabilidad
+* Formulario de contacto funcional con integración backend (Node.js)
 
 ---
 
 ## 🌐 Deploy
-Realizado en [Vercel](https://vercel.com/)
+Realizado en [Vercel](https://filotropo-dentronf.vercel.app/)
+
 
 ---
