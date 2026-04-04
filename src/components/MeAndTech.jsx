@@ -46,18 +46,20 @@ function MeAndTech() {
             Sobre mi
           </h2>
           <p className="text-base sm:text-lg leading-relaxed">
-            Frontend Developer | React, JavaScript, Tailwind.
+            Frontend Developer especializada en React, con experiencia en Node.Js para la integración de funcionalidades backend.
+
             
             <br /><br />
         
-           Construyo aplicaciones web dinámicas y responsivas, con foco en usabilidad
-            y rendimiento.
+            Desarrollo aplicaciones web orientadas a resolver necesidades reales de negocio, integrando Firebase, APIs y servicios externos.
+
 
            <br /><br />
 
-          Tengo experiencia integrando APIs, manejo de estado y sistemas de autenticación.
-         
-</p>
+          
+            He trabajado en proyectos que permiten gestionar productos y concretar ventas
+             mediante flujos simples, priorizando la usabilidad y la experiencia del 
+             usuario.</p>
 
           <motion.blockquote
             initial={{ opacity: 0, y: 20 }}
