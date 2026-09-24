@@ -12,6 +12,14 @@ dist
 dist-ssr
 *.local
 
+# Variables de entorno (nunca subir)
+.env
+.env.*
+!.env.example
+
+# Vercel
+.vercel
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
@@ -22,9 +30,3 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
-
-
-
-
-MAIL_USER=calzadosbranca@gmail.com
-MAIL_PASS=dcjndhnipdrxkaxb
