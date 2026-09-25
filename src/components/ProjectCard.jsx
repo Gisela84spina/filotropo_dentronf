@@ -12,22 +12,26 @@ const ProjectCard = ({ title, description, githubUrl, liveUrl, imageUrl }) => {
         <h3 className="text-2xl font-semibold mb-2">{title}</h3>
         <p className="mb-4 text-sm text-gray-300">{description}</p>
         <div className="flex justify-between items-center text-sm font-medium">
-          <a
-            href={githubUrl}
+          
+            <a href={githubUrl}
             target="_blank"
             rel="noopener noreferrer"
             className="text-teal-400 hover:underline"
           >
             GitHub
           </a>
-          <a
-            href={liveUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-teal-400 hover:underline"
-          >
-            Ver online
-          </a>
+          {liveUrl ? (
+            
+              <a href={liveUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-teal-400 hover:underline"
+            >
+              Ver online
+            </a>
+          ) : (
+            <span className="text-gray-500 italic">Solo backend</span>
+          )}
         </div>
       </div>
     </div>
