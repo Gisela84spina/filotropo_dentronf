@@ -2,8 +2,8 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaGitAlt } from "react-icons/fa";
-import { SiTailwindcss, SiVite } from "react-icons/si";
+import { SiTailwindcss, SiVite, SiSpringboot, SiMysql, SiPostman } from "react-icons/si";
+import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaGitAlt, FaJava } from "react-icons/fa";
 
 const techs = [
   { name: "HTML5", icon: <FaHtml5 className="text-orange-500" /> },
@@ -14,6 +14,12 @@ const techs = [
   { name: "Vite", icon: <SiVite className="text-purple-500" /> },
   { name: "Node.js", icon: <FaNodeJs className="text-green-500" /> },
   { name: "Git", icon: <FaGitAlt className="text-red-500" /> },
+  { name: "Java", icon: <FaJava className="text-red-600" /> },
+  { name: "Spring Boot", icon: <SiSpringboot className="text-green-600" /> },
+  { name: "MySQL", icon: <SiMysql className="text-blue-400" /> },
+  { name: "Playwright", icon: <span className="text-5xl">🎭</span> },
+  { name: "Postman", icon: <SiPostman className="text-orange-500" /> },
+  { name: "Jira", icon: <span className="text-5xl">📋</span> },
 ];
 
 function MeAndTech() {
@@ -46,20 +52,25 @@ function MeAndTech() {
             Sobre mi
           </h2>
           <p className="text-base sm:text-lg leading-relaxed">
-            Frontend Developer especializada en React, con experiencia en Node.Js para la integración de funcionalidades backend.
-
+            QA Automation - Software Dev
             
             <br /><br />
         
-            Desarrollo aplicaciones web orientadas a resolver necesidades reales de negocio, integrando Firebase, APIs y servicios externos.
-
+            De la gestión comercial a la calidad de software.
 
            <br /><br />
 
           
-            He trabajado en proyectos que permiten gestionar productos y concretar ventas
-             mediante flujos simples, priorizando la usabilidad y la experiencia del 
-             usuario.</p>
+           De padres comerciantes, mi experiencia laboral se inicia a una
+            edad muy temprana gestionando diferentes
+            rubros de comercios, lo que me generó una capacidad natural
+            para entender las necesidades reales del usuario, detectar
+            fallas en los procesos y trabajar con autonomía bajo objetivos claros.
+            <br />Desde 2022 comienza mi formación continua en el sector IT,
+             combinando el desarrollo web (React, Node.js, Java, Spring Boot)
+              con el Testing y la Automatización de
+               Calidad (QA).
+            </p>
 
           <motion.blockquote
             initial={{ opacity: 0, y: 20 }}
@@ -69,8 +80,11 @@ function MeAndTech() {
             className="relative text-red-500 italic mt-8 text-lg"
           >
             <span className="absolute text-5xl text-white/10 -left-6 -top-4 select-none">“</span>
-            Busco mi primera oportunidad profesional donde pueda seguir creciendo y aportar 
-            valor desde el desarrollo.
+            Mi objetivo es aportar un perfil integral: no solo diseño
+             e implemento pruebas automatizadas (Playwright, Postman,
+              SQL, Swagger), sino que entiendo el código fuente por 
+              dentro, lo que me permite colaborar a la par de los equipos
+               de desarrollo para entregar un software robusto y libre de fallas.
             <span className="absolute text-5xl text-white/10 -right-6 -bottom-4 select-none">”</span>
           </motion.blockquote>
         </div>
@@ -92,36 +106,6 @@ function MeAndTech() {
               group-hover:opacity-100 transition-opacity duration-500 animate-shine rounded-full"></div>
           </motion.div>
 
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ type: "spring", stiffness: 200, damping: 12 }}
-            viewport={{ once: true }}
-            className="flex flex-col items-center text-center group"
-          >
-            <div className="relative w-48 h-48 sm:w-64 sm:h-64 rounded-3xl overflow-hidden shadow-xl shadow-red-400/40 mb-4">
-              <img
-                src="/flia.jpg"
-                alt="Gise compartiendo un momento con su familia desenfocado"
-                className="absolute inset-0 w-full h-full object-cover object-[30%_30%] blur-sm scale-110"
-              />
-              <img
-                src="/flia.jpg"
-                alt="Gise compartiendo un momento con su familia"
-                className="relative w-full h-full object-cover object-[30%_30%] 
-                group-hover:scale-105 transition-transform duration-500 grayscale hover:grayscale-0"
-              />
-            </div>
-            <motion.p
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ duration: 1 }}
-              viewport={{ once: true }}
-              className="max-w-xs text-sm italic text-white/80"
-            >
-              “Mamá, curiosa incansable y apasionada por la tecnología. Todo eso convive en mí y lo abrazo con orgullo.”
-            </motion.p>
-          </motion.div>
         </div>
       </div>
 
